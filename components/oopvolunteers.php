@@ -11,11 +11,11 @@
       $this->setHours($hours);
     }
 
-    function getHours(){
+    public function getHours(){
       return $this->hours;
     }
 
-    function setHours($hours){
+    public function setHours($hours){
       if(is_int($hours) == true || is_float($hours) == true) {
         $this->hours = $hours;
       } else {
@@ -31,33 +31,21 @@
   echo $Dennis->getHours();
   echo "<br><br>";
 
-  // class VolunteerDriver extends Volunteer {
-  //   public $carBrand;
+  class VolunteerDriver extends Volunteer {
+    public $carBrand;
 
-  //   public function __construct($name, $work, $hours, $carBrand) {
-  //     parent::__construct($name, $work, $hours);
-  //     $this->carBrand = $carBrand;
-  //   }
+    public function __construct($name, $work, $hours, $carBrand) {
+      parent::__construct($name, $work, $hours);
+      $this->carBrand = $carBrand;
+    }
 
-  //   function getHours(){
-  //     return $this->hours;
-  //   }
+  }
 
-  //   function setHours($hours){
-  //     if(is_int($hours) == true || is_float($hours) == true) {
-  //       $this->hours = $hours;
-  //     } else {
-  //       $this->hours = "Error: Invalid datatype.";
-  //     }
-  //   }
+  $AD = new VolunteerDriver("Anthony Davis", "Habitat for Humanity", 24, "Shelby GT Mustang");
 
-  // }
-
-  // $AD = new VolunteerDriver("Anthony Davis", "Habitat for Humanity", 24, "Shelby GT Mustang");
-
-  // echo "$AD->name<br>";
-  // echo "$AD->work<br>";
-  // echo $AD->getHours();
-  // echo"<br>$AD->carBrand";
+  echo "$AD->name<br>";
+  echo "$AD->work<br>";
+  echo $AD->getHours();
+  echo"<br>$AD->carBrand";
 
 ?>
