@@ -11,7 +11,7 @@
       <?php
         echo "<h1>Involve X PHP</h1>";
         echo "<hr>";
-        echo "A demonstration of PHP within Involve.";
+        echo "A demonstration of PHP to help team morale.";
       ?>
     </div>
 
