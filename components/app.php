@@ -11,5 +11,12 @@
       include 'header.php';
     ?>
 
+    <br>
+
+    <?php
+      include 'form.php';
+    ?>
+
+
   </body>
 </html>

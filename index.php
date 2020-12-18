@@ -7,7 +7,7 @@
   <body>
 
   <?php
-    include "app.php";
+    include "components/app.php";
   ?>
 
   </body>
